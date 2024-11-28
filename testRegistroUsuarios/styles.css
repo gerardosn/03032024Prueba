@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
@@ -145,7 +145,122 @@ input.error {
 
 .delete-button {
     color: #ef4444;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
 }
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-footer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Estilos para la lista de usuarios */
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-item {
+    background-color: #f0f4f8; /* Color de fondo uniforme y suave */
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.user-item:hover {
+    background-color: #e6edf3;
+}
+
+.user-details {
+    flex-grow: 1;
+}
+
+.user-details strong {
+    display: block;
+    font-size: 1.1rem; /* Nombre ligeramente más grande */
+    color: #1a365d; /* Color más oscuro para resaltar */
+    margin-bottom: 5px;
+}
+
+.user-details .user-id {
+    font-size: 0.7rem;
+    color: #718096;
+    margin-bottom: 5px;
+}
+
+.user-details .user-contact {
+    font-size: 0.9rem;
+    color: #4a5568;
+    margin: 3px 0;
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    color: #3182ce;
+}
+
+.delete-button {
+    color: #e53e3e;
+}
+
+.action-button:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+/* Resto del CSS permanece igual */
+/* ... (mantener el resto del CSS anterior) */
 
 .hidden {
     display: none !important;
